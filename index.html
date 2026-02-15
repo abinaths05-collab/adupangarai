@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADUPANGARAI | Premium South Indian Dining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue-dark: #0F172A;
+      --blue-royal: #1E3A8A;
+      --blue-light: #F8FAFC;
+      --accent-blue: #3B82F6;
+      --silver: #E2E8F0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--blue-light);
+      color: #1E293B;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .font-royal {
+      font-family: 'Cinzel', serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--blue-light);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--blue-royal);
+      border-radius: 4px;
+    }
+    .blue-gradient {
+      background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+    }
+    .blue-text-gradient {
+      background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-blue {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(30, 58, 138, 0.1);
+    }
+    .glass-navy {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .shadow-luxury {
+      box-shadow: 0 10px 30px -10px rgba(30, 58, 138, 0.15);
+    }
+
+    @keyframes slowScale {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+    .animate-slowScale {
+      animation: slowScale 20s infinite alternate ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slideUp {
+      animation: slideUp 0.4s cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .animate-scaleIn {
+      animation: scaleIn 0.3s cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
